@@ -4,10 +4,6 @@ from models.author import Author
 from models.magazine import Magazine
 from models.article import Article
 
-# Print all mapped tables
-from database.setup import Base
-# print(Base.metadata.tables)
-
 # Initialize the database and create tables
 create_tables()
 
@@ -40,9 +36,18 @@ authors = magazine.get_contributors()  # Correct method name here
 titles = magazine.get_article_titles()
 
 # Print out authors and article titles
-print("Authors:", authors)
-print("Article Titles:", titles)
+print("Magazine Name:", magazine.name)  # Printing the magazine name
+print("Magazine Category:", magazine.category)  # Printing the magazine category
 
+# Print authors who contributed to the magazine
+print("Contributors:")
+for author in authors:
+    print(f"- {author.name}")  # Printing each author's name
+
+# Print article titles
+print("Article Titles:")
+for title in titles:
+    print(f"- {title}")  # Printing each article's title
 
 # Close the session
 session.close()
