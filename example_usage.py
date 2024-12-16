@@ -11,6 +11,7 @@ def main():
     session = Session()
 
     # Create authors
+    author = Author("John Doe")
     author3 = Author(name="Melki Doe")
     author4 = Author(name="Simeon Smith")
     
@@ -20,6 +21,7 @@ def main():
     session.commit()
 
     # Create magazines
+    magazine = Magazine("Tech Weekly",  category ="Technology")
     magazine3 = Magazine(name="People People", category="Politics")
     magazine4 = Magazine(name="Music Weekly", category="Music")
     
