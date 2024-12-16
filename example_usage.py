@@ -11,12 +11,12 @@ def main():
     session = Session()
 
     # Create authors
-    author3 = Author(name=" Melki Doe")
+    author3 = Author(name="Melki Doe")
     author4 = Author(name="Simeon Smith")
     
     # Add authors to the session and commit
-    session.add(author4)
     session.add(author3)
+    session.add(author4)
     session.commit()
 
     # Create magazines
@@ -28,9 +28,19 @@ def main():
     session.add(magazine4)
     session.commit()
 
-    # Create articles
-    article3 = Article(author=author3, magazine=magazine3, title="Just in politics")
-    article4 = Article(author=author4, magazine=magazine4, title="Lately in music")
+    # Create articles with content
+    article3 = Article(
+        author=author3, 
+        magazine=magazine3, 
+        title="Just in politics", 
+        content="This is a breaking news article on politics."
+    )
+    article4 = Article(
+        author=author4, 
+        magazine=magazine4, 
+        title="Lately in music", 
+        content="This is a recent update on the music industry."
+    )
     
     # Add articles to the session and commit
     session.add(article3)

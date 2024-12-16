@@ -1,4 +1,3 @@
-
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from database.setup import Base
@@ -9,7 +8,8 @@ class Article(Base):
     __tablename__ = 'articles'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    _title = Column("title", String, nullable=False)  # Use _title as the internal column name
+    _title = Column("title", String, nullable=True)  # Use _title as the internal column name
+    content = Column(String, nullable=False)  # New column for article content
     author_id = Column(Integer, ForeignKey('authors.id'))
     magazine_id = Column(Integer, ForeignKey('magazines.id'))
 
@@ -17,10 +17,11 @@ class Article(Base):
     author = relationship('Author', back_populates='articles')
     magazine = relationship('Magazine', back_populates='articles')  # This line ensures back-population
 
-    def __init__(self, author, magazine, title):
+    def __init__(self, author, magazine, title, content=None):
         self.author = author
         self.magazine = magazine
         self.title = title  # This will call the setter
+        self.content = content  # Optional content for the article
 
     @property
     def title(self):
