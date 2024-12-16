@@ -11,30 +11,30 @@ def main():
     session = Session()
 
     # Create authors
-    author1 = Author(name="Jane Doe")
-    author2 = Author(name="John Smith")
+    author3 = Author(name=" Melki Doe")
+    author4 = Author(name="Simeon Smith")
     
     # Add authors to the session and commit
-    session.add(author1)
-    session.add(author2)
+    session.add(author4)
+    session.add(author3)
     session.commit()
 
     # Create magazines
-    magazine1 = Magazine(name="Tech Monthly", category="Technology")
-    magazine2 = Magazine(name="Science Weekly", category="Science")
+    magazine3 = Magazine(name="People People", category="Politics")
+    magazine4 = Magazine(name="Music Weekly", category="Music")
     
     # Add magazines to the session and commit
-    session.add(magazine1)
-    session.add(magazine2)
+    session.add(magazine3)
+    session.add(magazine4)
     session.commit()
 
     # Create articles
-    article1 = Article(author=author1, magazine=magazine1, title="The Future of AI")
-    article2 = Article(author=author2, magazine=magazine2, title="Exploring Quantum Physics")
+    article3 = Article(author=author3, magazine=magazine3, title="Just in politics")
+    article4 = Article(author=author4, magazine=magazine4, title="Lately in music")
     
     # Add articles to the session and commit
-    session.add(article1)
-    session.add(article2)
+    session.add(article3)
+    session.add(article4)
     session.commit()
 
     # Fetch and display magazines and their contributors

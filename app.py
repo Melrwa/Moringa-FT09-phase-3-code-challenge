@@ -6,6 +6,11 @@ from models.article import Article
 
 # Initialize the database and create tables
 create_tables()
+def main():
+    # Initialize the database and create tables
+    create_tables()
+
+
 
 # Create a session
 session = Session()
