@@ -24,7 +24,7 @@ This application manages authors, magazines, and articles using SQLAlchemy. User
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-repository-url.git
+    git clone https://github.com/Melrwa/Moringa-FT09-phase-3-code-challenge.git
     cd Moringa-FT09-phase-3-code-challenge
     ```
 
