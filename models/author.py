@@ -24,4 +24,3 @@ class Author(Base):
         if len(value) < 2 or len(value) > 50:
             raise ValueError("Name must be between 2 and 50 characters")
         self._name = value  # Use _name to store the value
-
