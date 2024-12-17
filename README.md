@@ -73,22 +73,14 @@ When you run `app.py`, the following options are available:
 
 ### Sample Menu
 
-===== Main Menu =====
-0:Create All (Author, Magazine, Article)
-1: Create Author 2: Create Magazine
-3: Create Article 4: Display All Authors
-5: Display All Magazines
-6: Display All Articles
-7: Display Articles of a Specific Author
-8: Display Authors Who Contributed to a Specific Magazine
-00: Exit
+===== Main Menu ===== 0: Create All (Author, Magazine, Article) 1: Create Author 2: Create Magazine 3: Create Article 4: Display All Authors 5: Display All Magazines 6: Display All Articles 7: Display Articles of a Specific Author 8: Display Authors Who Contributed to a Specific Magazine 00: Exit
 
 ### Example Input/Output
 
 1. **Creating an Article**:
 Enter the article title: Tech Trends Enter the article content: AI innovations in 2024 Choose an author (number): 1 Choose a magazine (number): 2 Article 'Tech Trends' created successfully.
 
-2. **Viewing Articles**:
+2.**Viewing Articles**:
 --- All Articles --- Title: "Tech Trends" | Author: John Doe | Magazine: Tech Weekly
 
 3.**Advanced Query**: Articles by a specific author:
