@@ -81,10 +81,12 @@ When you run `app.py`, the following options are available:
 Enter the article title: Tech Trends Enter the article content: AI innovations in 2024 Choose an author (number): 1 Choose a magazine (number): 2 Article 'Tech Trends' created successfully.
 
 2.**Viewing Articles**:
---- All Articles --- Title: "Tech Trends" | Author: John Doe | Magazine: Tech Weekly
+
+--- All Articles ---
+ Title: "Tech Trends" | Author: John Doe | Magazine: Tech Weekly
 
 3.**Advanced Query**: Articles by a specific author:
-Enter the author's name or ID: John Doe --- Articles by 'John Doe' --- Title: Tech Trends | Magazine: Tech Weekly
+Enter the author's  ID: John Doe --- Articles by 'John Doe' --- Title: Tech Trends | Magazine: Tech Weekly
 
 ## License
 
